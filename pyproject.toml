@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "test-app-python-poetry"
+version = "0.1.0"
+description = ""
+authors = ["Philipp Heuer <git@philippheuer.de>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.5"
+
+[tool.poetry.scripts]
+cli = "test_app_python_poetry.cli:cli"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
